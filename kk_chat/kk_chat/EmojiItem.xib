@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmojiItem" customModule="_1_test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iao-In-iuM">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="6"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="iao-In-iuM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JoY-zq-zNv"/>
+                <constraint firstAttribute="bottom" secondItem="iao-In-iuM" secondAttribute="bottom" id="Tpz-Hs-cvg"/>
+                <constraint firstAttribute="trailing" secondItem="iao-In-iuM" secondAttribute="trailing" id="wJM-1r-nz6"/>
+                <constraint firstItem="iao-In-iuM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wZY-2R-lZZ"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="iao-In-iuM" id="CHY-U9-Tw8"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

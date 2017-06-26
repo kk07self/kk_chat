@@ -1,0 +1,370 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A6513901F016002004F4EFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A65138F1F016002004F4EFB /* AppDelegate.swift */; };
+		4A6513921F016002004F4EFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513911F016002004F4EFB /* ViewController.swift */; };
+		4A6513951F016002004F4EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513931F016002004F4EFB /* Main.storyboard */; };
+		4A6513971F016002004F4EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513961F016002004F4EFB /* Assets.xcassets */; };
+		4A65139A1F016002004F4EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513981F016002004F4EFB /* LaunchScreen.storyboard */; };
+		4A6513AF1F016051004F4EFB /* Chat.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513A21F016051004F4EFB /* Chat.bundle */; };
+		4A6513B01F016051004F4EFB /* ChatCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A31F016051004F4EFB /* ChatCollectionViewFlowLayout.swift */; };
+		4A6513B11F016051004F4EFB /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A41F016051004F4EFB /* ChatHelper.swift */; };
+		4A6513B21F016051004F4EFB /* ChatToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A51F016051004F4EFB /* ChatToolBar.swift */; };
+		4A6513B31F016051004F4EFB /* ChatToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513A61F016051004F4EFB /* ChatToolBar.xib */; };
+		4A6513B41F016051004F4EFB /* EmojiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A71F016051004F4EFB /* EmojiItem.swift */; };
+		4A6513B51F016051004F4EFB /* EmojiItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513A81F016051004F4EFB /* EmojiItem.xib */; };
+		4A6513B61F016051004F4EFB /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A91F016051004F4EFB /* EmojiView.swift */; };
+		4A6513B71F016051004F4EFB /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513AA1F016051004F4EFB /* EmojiView.xib */; };
+		4A6513B81F016051004F4EFB /* ItemsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513AB1F016051004F4EFB /* ItemsItem.swift */; };
+		4A6513B91F016051004F4EFB /* ItemsItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513AC1F016051004F4EFB /* ItemsItem.xib */; };
+		4A6513BA1F016051004F4EFB /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513AD1F016051004F4EFB /* ItemsView.swift */; };
+		4A6513BB1F016051004F4EFB /* ItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513AE1F016051004F4EFB /* ItemsView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4A65138C1F016002004F4EFB /* kk_chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kk_chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A65138F1F016002004F4EFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A6513911F016002004F4EFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A6513941F016002004F4EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A6513961F016002004F4EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A6513991F016002004F4EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A65139B1F016002004F4EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A6513A21F016051004F4EFB /* Chat.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Chat.bundle; sourceTree = "<group>"; };
+		4A6513A31F016051004F4EFB /* ChatCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		4A6513A41F016051004F4EFB /* ChatHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		4A6513A51F016051004F4EFB /* ChatToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatToolBar.swift; sourceTree = "<group>"; };
+		4A6513A61F016051004F4EFB /* ChatToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolBar.xib; sourceTree = "<group>"; };
+		4A6513A71F016051004F4EFB /* EmojiItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiItem.swift; sourceTree = "<group>"; };
+		4A6513A81F016051004F4EFB /* EmojiItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiItem.xib; sourceTree = "<group>"; };
+		4A6513A91F016051004F4EFB /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
+		4A6513AA1F016051004F4EFB /* EmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiView.xib; sourceTree = "<group>"; };
+		4A6513AB1F016051004F4EFB /* ItemsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsItem.swift; sourceTree = "<group>"; };
+		4A6513AC1F016051004F4EFB /* ItemsItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsItem.xib; sourceTree = "<group>"; };
+		4A6513AD1F016051004F4EFB /* ItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
+		4A6513AE1F016051004F4EFB /* ItemsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A6513891F016002004F4EFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4A6513831F016002004F4EFB = {
+			isa = PBXGroup;
+			children = (
+				4A65138E1F016002004F4EFB /* kk_chat */,
+				4A65138D1F016002004F4EFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A65138D1F016002004F4EFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A65138C1F016002004F4EFB /* kk_chat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A65138E1F016002004F4EFB /* kk_chat */ = {
+			isa = PBXGroup;
+			children = (
+				4A6513A11F016051004F4EFB /* kk_chat */,
+				4A65138F1F016002004F4EFB /* AppDelegate.swift */,
+				4A6513911F016002004F4EFB /* ViewController.swift */,
+				4A6513931F016002004F4EFB /* Main.storyboard */,
+				4A6513961F016002004F4EFB /* Assets.xcassets */,
+				4A6513981F016002004F4EFB /* LaunchScreen.storyboard */,
+				4A65139B1F016002004F4EFB /* Info.plist */,
+			);
+			path = kk_chat;
+			sourceTree = "<group>";
+		};
+		4A6513A11F016051004F4EFB /* kk_chat */ = {
+			isa = PBXGroup;
+			children = (
+				4A6513A21F016051004F4EFB /* Chat.bundle */,
+				4A6513A31F016051004F4EFB /* ChatCollectionViewFlowLayout.swift */,
+				4A6513A41F016051004F4EFB /* ChatHelper.swift */,
+				4A6513A51F016051004F4EFB /* ChatToolBar.swift */,
+				4A6513A61F016051004F4EFB /* ChatToolBar.xib */,
+				4A6513A71F016051004F4EFB /* EmojiItem.swift */,
+				4A6513A81F016051004F4EFB /* EmojiItem.xib */,
+				4A6513A91F016051004F4EFB /* EmojiView.swift */,
+				4A6513AA1F016051004F4EFB /* EmojiView.xib */,
+				4A6513AB1F016051004F4EFB /* ItemsItem.swift */,
+				4A6513AC1F016051004F4EFB /* ItemsItem.xib */,
+				4A6513AD1F016051004F4EFB /* ItemsView.swift */,
+				4A6513AE1F016051004F4EFB /* ItemsView.xib */,
+			);
+			path = kk_chat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A65138B1F016002004F4EFB /* kk_chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A65139E1F016002004F4EFB /* Build configuration list for PBXNativeTarget "kk_chat" */;
+			buildPhases = (
+				4A6513881F016002004F4EFB /* Sources */,
+				4A6513891F016002004F4EFB /* Frameworks */,
+				4A65138A1F016002004F4EFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = kk_chat;
+			productName = kk_chat;
+			productReference = 4A65138C1F016002004F4EFB /* kk_chat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A6513841F016002004F4EFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "陈康";
+				TargetAttributes = {
+					4A65138B1F016002004F4EFB = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = HA5G797698;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4A6513871F016002004F4EFB /* Build configuration list for PBXProject "kk_chat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A6513831F016002004F4EFB;
+			productRefGroup = 4A65138D1F016002004F4EFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A65138B1F016002004F4EFB /* kk_chat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A65138A1F016002004F4EFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6513B71F016051004F4EFB /* EmojiView.xib in Resources */,
+				4A6513BB1F016051004F4EFB /* ItemsView.xib in Resources */,
+				4A65139A1F016002004F4EFB /* LaunchScreen.storyboard in Resources */,
+				4A6513B31F016051004F4EFB /* ChatToolBar.xib in Resources */,
+				4A6513971F016002004F4EFB /* Assets.xcassets in Resources */,
+				4A6513951F016002004F4EFB /* Main.storyboard in Resources */,
+				4A6513AF1F016051004F4EFB /* Chat.bundle in Resources */,
+				4A6513B51F016051004F4EFB /* EmojiItem.xib in Resources */,
+				4A6513B91F016051004F4EFB /* ItemsItem.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A6513881F016002004F4EFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6513921F016002004F4EFB /* ViewController.swift in Sources */,
+				4A6513BA1F016051004F4EFB /* ItemsView.swift in Sources */,
+				4A6513B41F016051004F4EFB /* EmojiItem.swift in Sources */,
+				4A6513B21F016051004F4EFB /* ChatToolBar.swift in Sources */,
+				4A6513B81F016051004F4EFB /* ItemsItem.swift in Sources */,
+				4A6513B61F016051004F4EFB /* EmojiView.swift in Sources */,
+				4A6513B01F016051004F4EFB /* ChatCollectionViewFlowLayout.swift in Sources */,
+				4A6513901F016002004F4EFB /* AppDelegate.swift in Sources */,
+				4A6513B11F016051004F4EFB /* ChatHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A6513931F016002004F4EFB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6513941F016002004F4EFB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A6513981F016002004F4EFB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A6513991F016002004F4EFB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A65139C1F016002004F4EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A65139D1F016002004F4EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A65139F1F016002004F4EFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HA5G797698;
+				INFOPLIST_FILE = kk_chat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KK.kk-chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4A6513A01F016002004F4EFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HA5G797698;
+				INFOPLIST_FILE = kk_chat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "KK.kk-chat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A6513871F016002004F4EFB /* Build configuration list for PBXProject "kk_chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A65139C1F016002004F4EFB /* Debug */,
+				4A65139D1F016002004F4EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A65139E1F016002004F4EFB /* Build configuration list for PBXNativeTarget "kk_chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A65139F1F016002004F4EFB /* Debug */,
+				4A6513A01F016002004F4EFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A6513841F016002004F4EFB /* Project object */;
+}
