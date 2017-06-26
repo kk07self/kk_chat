@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'kk_chat'
-s.version      = '0.0.1'
+s.version      = '0.0.5'
 s.summary      = 'a component of refresh on iOS'
 s.homepage     = 'https://github.com/CoderJFCK/kk_chat'
 s.description  = <<-DESC
