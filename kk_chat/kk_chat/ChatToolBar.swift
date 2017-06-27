@@ -136,7 +136,7 @@ public class ChatToolBar: UIView {
     
     /// 初始化控件
     private func xibSetup() {
-        view = UINib(nibName: "ChatToolBar", bundle: Bundle(for: type(of: self))).instantiate(withOwner: self, options: nil)[0] as! UIView
+        view = UINib(nibName: "ChatToolBar", bundle: Bundle(path: Bundle(for: type(of: self)).bundlePath + "/xibs.bundle")).instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
