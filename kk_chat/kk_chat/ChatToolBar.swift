@@ -50,7 +50,7 @@ private let ItemsViewHeight: CGFloat = 215
 
 public class ChatToolBar: UIView {
     
-    var delegate: ChatToolBarDelegate?
+    public var delegate: ChatToolBarDelegate?
     
     /// 更多按钮数据
     public var items: [ItemModel]? {
