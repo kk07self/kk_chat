@@ -53,7 +53,7 @@ class EmojiView: UIView {
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
         
-        collectionView.register(UINib(nibName: "EmojiItem",bundle: nil), forCellWithReuseIdentifier: "EmojiItem")
+        collectionView.register(UINib(nibName: "EmojiItem", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "EmojiItem")
         
         collectionView.collectionViewLayout = ChatCollectionViewFlowLayout.chatCollectionViewFlowLayout(sections: 8, rows: 3, pageSize: CGSize(width:kScreenWidth, height:155), pageSpacing: 15, columnSpacing: 0, rowSpacing: 0, edgeInsets: UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0))
         
