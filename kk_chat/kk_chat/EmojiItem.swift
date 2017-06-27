@@ -16,8 +16,8 @@ class EmojiItem: UICollectionViewCell {
         didSet {
             if titleString == "删除" {
                 button.setTitle("", for: .normal)
-                let bundle = Bundle(path: Bundle.main.path(forResource: "Chat", ofType: "bundle")!)
-                button.setImage(UIImage(named:"DeleteEmoticonBtn",in:bundle, compatibleWith:nil), for: .normal)
+                let bundle =  Bundle(for: ItemsView.classForCoder())
+                button.setImage(UIImage(named:"images.bundle/DeleteEmoticonBtn",in:bundle, compatibleWith:nil), for: .normal)
             } else {
                 button.setTitle(titleString, for: .normal)
                 button.setImage(nil, for: .normal)

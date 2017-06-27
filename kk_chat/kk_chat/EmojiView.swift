@@ -30,7 +30,7 @@ class EmojiView: UIView {
     var delegate: EmojiViewDelegate?
     
     fileprivate var emojiDict: [String:[String]] = {
-        let plistPath = Bundle.main.path(forResource: "emoji", ofType: "plist")
+        let plistPath = Bundle(for: EmojiView.classForCoder()).path(forResource: "emoji", ofType: "plist")
         return NSDictionary(contentsOfFile: plistPath!) as! [String: [String]]
     }()
     

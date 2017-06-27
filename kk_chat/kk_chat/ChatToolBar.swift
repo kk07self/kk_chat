@@ -176,13 +176,13 @@ public class ChatToolBar: UIView {
         emojiView.delegate = self
         itemsView.delegate = self
         
-        let bundle = Bundle(path: Bundle.main.path(forResource: "Chat", ofType: "bundle")!)
-        leftItem.setImage(UIImage(named:"chat_voice_icon",in:bundle, compatibleWith:nil), for: .normal)
-        leftItem.setImage(UIImage(named:"chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
-        emojiItem.setImage(UIImage(named:"chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
-        emojiItem.setImage(UIImage(named:"chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
-        moreItem.setImage(UIImage(named:"chat_more_icon",in:bundle, compatibleWith:nil), for: .normal)
-        emojiItem.setImage(UIImage(named:"chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
+        let bundle =  Bundle(for: ChatToolBar.classForCoder())
+        leftItem.setImage(UIImage(named:"images.bundle/chat_voice_icon",in:bundle, compatibleWith:nil), for: .normal)
+        leftItem.setImage(UIImage(named:"images.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
+        emojiItem.setImage(UIImage(named:"images.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
+        emojiItem.setImage(UIImage(named:"images.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
+        moreItem.setImage(UIImage(named:"images.bundle/chat_more_icon",in:bundle, compatibleWith:nil), for: .normal)
+        emojiItem.setImage(UIImage(named:"images.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
         
         // 监听屏幕旋转
     }
