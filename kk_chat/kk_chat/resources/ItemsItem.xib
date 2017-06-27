@@ -19,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MuI-iZ-Npy">
-                        <rect key="frame" x="2.5" y="5" width="55" height="55"/>
+                        <rect key="frame" x="15" y="17.5" width="30" height="30"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="55" id="Ys9-MW-3gG"/>
-                            <constraint firstAttribute="height" constant="55" id="dyd-SU-IVn"/>
+                            <constraint firstAttribute="width" constant="30" id="Ys9-MW-3gG"/>
+                            <constraint firstAttribute="height" constant="30" id="dyd-SU-IVn"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcm-bX-2ar">
-                        <rect key="frame" x="0.0" y="60" width="60" height="25"/>
+                        <rect key="frame" x="0.0" y="47.5" width="60" height="37.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>

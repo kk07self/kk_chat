@@ -23,8 +23,12 @@ class ItemsView: UIView {
     
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
-    var items = [ItemModel]()
-    
+    var items = [ItemModel]() {
+        didSet {
+            pageControl.numberOfPages = items.count / 8 + ((items.count % 8 == 0) ? 0 : 1)
+            collectionView.reloadData()
+        }
+    }
     override init(frame: CGRect) {
         super.init(frame: frame)
         xibSetup()
