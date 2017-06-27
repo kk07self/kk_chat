@@ -42,7 +42,7 @@ class ItemsView: UIView {
         addSubview(view)
 
         collectionView.collectionViewLayout = ChatCollectionViewFlowLayout.chatCollectionViewFlowLayout(sections: 4, rows: 2, pageSize: CGSize(width:kScreenWidth, height:170), pageSpacing: 15, columnSpacing: 0, rowSpacing: 0, edgeInsets: UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0))
-        collectionView.register(UINib(nibName: "ItemsItem",bundle: nil), forCellWithReuseIdentifier: "ItemsItem")
+        collectionView.register(UINib(nibName: "ItemsItem", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "ItemsItem")
         collectionView.reloadData()
         pageControl.numberOfPages = items.count / 8 + ((items.count % 8 == 0) ? 0 : 1)
     }

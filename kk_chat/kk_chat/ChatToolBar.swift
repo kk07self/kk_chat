@@ -184,7 +184,28 @@ public class ChatToolBar: UIView {
         moreItem.setImage(UIImage(named:"images.bundle/chat_more_icon",in:bundle, compatibleWith:nil), for: .normal)
         emojiItem.setImage(UIImage(named:"images.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
         
-        // 监听屏幕旋转
+    }
+    
+    // 手动显示、隐藏按钮
+    public func isHideChatToolBarContentView(_ isHide: Bool) {
+        
+        // 隐藏
+        if isHide {
+            // 隐藏键盘
+            if textView.isFirstResponder {
+                self.selectedItemIndex = .none
+                textView.resignFirstResponder()
+            } else {
+                // 隐藏按钮
+                self.contentViewHeightConstraint.constant = 0
+                self.selectedItemIndex = .none
+                contentView.isHidden = isHide
+                layoutAnimation()
+            }
+        } else {
+            // 显示
+            textView.becomeFirstResponder()
+        }
     }
 }
 
@@ -415,6 +436,7 @@ extension ChatToolBar: UITextViewDelegate {
         let origin = (note.userInfo?[UIKeyboardFrameEndUserInfoKey] as! CGRect).origin
         // origin.y < kscreenHeight  显示键盘；> 隐藏键盘，切需要判断是不是显示emoji键盘
         self.contentViewHeightConstraint.constant = origin.y < kScreenHeight ? size.height : (selectedItemIndex == .none ? 0 : ItemsViewHeight)
+        contentView.isHidden = selectedItemIndex == .none
         layoutAnimation()
     }
 }
