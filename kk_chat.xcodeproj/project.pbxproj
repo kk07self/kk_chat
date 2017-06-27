@@ -19,17 +19,13 @@
 		4A6513B61F016051004F4EFB /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513A91F016051004F4EFB /* EmojiView.swift */; };
 		4A6513B81F016051004F4EFB /* ItemsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513AB1F016051004F4EFB /* ItemsItem.swift */; };
 		4A6513BA1F016051004F4EFB /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6513AD1F016051004F4EFB /* ItemsView.swift */; };
-		4A6514031F01FC5E004F4EFB /* chat_emoji_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513F61F01FC5E004F4EFB /* chat_emoji_icon.png */; };
-		4A6514041F01FC5E004F4EFB /* chat_keyboard_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513F71F01FC5E004F4EFB /* chat_keyboard_icon.png */; };
-		4A6514051F01FC5E004F4EFB /* chat_more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513F81F01FC5E004F4EFB /* chat_more_icon.png */; };
-		4A6514061F01FC5E004F4EFB /* chat_voice_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513F91F01FC5E004F4EFB /* chat_voice_icon.png */; };
-		4A6514071F01FC5E004F4EFB /* DeleteEmoticonBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513FA1F01FC5E004F4EFB /* DeleteEmoticonBtn.png */; };
 		4A6514081F01FC5E004F4EFB /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513FC1F01FC5E004F4EFB /* emoji.plist */; };
-		4A6514091F01FC5E004F4EFB /* ChatToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513FE1F01FC5E004F4EFB /* ChatToolBar.xib */; };
-		4A65140A1F01FC5E004F4EFB /* EmojiItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6513FF1F01FC5E004F4EFB /* EmojiItem.xib */; };
-		4A65140B1F01FC5E004F4EFB /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514001F01FC5E004F4EFB /* EmojiView.xib */; };
-		4A65140C1F01FC5E004F4EFB /* ItemsItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514011F01FC5E004F4EFB /* ItemsItem.xib */; };
-		4A65140D1F01FC5E004F4EFB /* ItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514021F01FC5E004F4EFB /* ItemsView.xib */; };
+		4A65140F1F020102004F4EFB /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A65140E1F020102004F4EFB /* images.bundle */; };
+		4A6514151F020315004F4EFB /* ChatToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514101F020315004F4EFB /* ChatToolBar.xib */; };
+		4A6514161F020315004F4EFB /* EmojiItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514111F020315004F4EFB /* EmojiItem.xib */; };
+		4A6514171F020315004F4EFB /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514121F020315004F4EFB /* EmojiView.xib */; };
+		4A6514181F020315004F4EFB /* ItemsItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514131F020315004F4EFB /* ItemsItem.xib */; };
+		4A6514191F020315004F4EFB /* ItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A6514141F020315004F4EFB /* ItemsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,17 +43,13 @@
 		4A6513A91F016051004F4EFB /* EmojiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiView.swift; sourceTree = "<group>"; };
 		4A6513AB1F016051004F4EFB /* ItemsItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsItem.swift; sourceTree = "<group>"; };
 		4A6513AD1F016051004F4EFB /* ItemsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
-		4A6513F61F01FC5E004F4EFB /* chat_emoji_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_emoji_icon.png; sourceTree = "<group>"; };
-		4A6513F71F01FC5E004F4EFB /* chat_keyboard_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_keyboard_icon.png; sourceTree = "<group>"; };
-		4A6513F81F01FC5E004F4EFB /* chat_more_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_more_icon.png; sourceTree = "<group>"; };
-		4A6513F91F01FC5E004F4EFB /* chat_voice_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat_voice_icon.png; sourceTree = "<group>"; };
-		4A6513FA1F01FC5E004F4EFB /* DeleteEmoticonBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeleteEmoticonBtn.png; sourceTree = "<group>"; };
 		4A6513FC1F01FC5E004F4EFB /* emoji.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = emoji.plist; sourceTree = "<group>"; };
-		4A6513FE1F01FC5E004F4EFB /* ChatToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolBar.xib; sourceTree = "<group>"; };
-		4A6513FF1F01FC5E004F4EFB /* EmojiItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiItem.xib; sourceTree = "<group>"; };
-		4A6514001F01FC5E004F4EFB /* EmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiView.xib; sourceTree = "<group>"; };
-		4A6514011F01FC5E004F4EFB /* ItemsItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsItem.xib; sourceTree = "<group>"; };
-		4A6514021F01FC5E004F4EFB /* ItemsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsView.xib; sourceTree = "<group>"; };
+		4A65140E1F020102004F4EFB /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		4A6514101F020315004F4EFB /* ChatToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatToolBar.xib; sourceTree = "<group>"; };
+		4A6514111F020315004F4EFB /* EmojiItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiItem.xib; sourceTree = "<group>"; };
+		4A6514121F020315004F4EFB /* EmojiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmojiView.xib; sourceTree = "<group>"; };
+		4A6514131F020315004F4EFB /* ItemsItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsItem.xib; sourceTree = "<group>"; };
+		4A6514141F020315004F4EFB /* ItemsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +103,11 @@
 				4A6513A91F016051004F4EFB /* EmojiView.swift */,
 				4A6513AB1F016051004F4EFB /* ItemsItem.swift */,
 				4A6513AD1F016051004F4EFB /* ItemsView.swift */,
+				4A6514101F020315004F4EFB /* ChatToolBar.xib */,
+				4A6514111F020315004F4EFB /* EmojiItem.xib */,
+				4A6514121F020315004F4EFB /* EmojiView.xib */,
+				4A6514131F020315004F4EFB /* ItemsItem.xib */,
+				4A6514141F020315004F4EFB /* ItemsView.xib */,
 				4A6513F41F01FC5E004F4EFB /* Resource */,
 			);
 			path = kk_chat;
@@ -119,23 +116,10 @@
 		4A6513F41F01FC5E004F4EFB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				4A6513F51F01FC5E004F4EFB /* images */,
+				4A65140E1F020102004F4EFB /* images.bundle */,
 				4A6513FB1F01FC5E004F4EFB /* others */,
-				4A6513FD1F01FC5E004F4EFB /* xibs */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		4A6513F51F01FC5E004F4EFB /* images */ = {
-			isa = PBXGroup;
-			children = (
-				4A6513F61F01FC5E004F4EFB /* chat_emoji_icon.png */,
-				4A6513F71F01FC5E004F4EFB /* chat_keyboard_icon.png */,
-				4A6513F81F01FC5E004F4EFB /* chat_more_icon.png */,
-				4A6513F91F01FC5E004F4EFB /* chat_voice_icon.png */,
-				4A6513FA1F01FC5E004F4EFB /* DeleteEmoticonBtn.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		4A6513FB1F01FC5E004F4EFB /* others */ = {
@@ -144,18 +128,6 @@
 				4A6513FC1F01FC5E004F4EFB /* emoji.plist */,
 			);
 			path = others;
-			sourceTree = "<group>";
-		};
-		4A6513FD1F01FC5E004F4EFB /* xibs */ = {
-			isa = PBXGroup;
-			children = (
-				4A6513FE1F01FC5E004F4EFB /* ChatToolBar.xib */,
-				4A6513FF1F01FC5E004F4EFB /* EmojiItem.xib */,
-				4A6514001F01FC5E004F4EFB /* EmojiView.xib */,
-				4A6514011F01FC5E004F4EFB /* ItemsItem.xib */,
-				4A6514021F01FC5E004F4EFB /* ItemsView.xib */,
-			);
-			path = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,17 +191,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A6514081F01FC5E004F4EFB /* emoji.plist in Resources */,
-				4A65140D1F01FC5E004F4EFB /* ItemsView.xib in Resources */,
-				4A6514091F01FC5E004F4EFB /* ChatToolBar.xib in Resources */,
 				4A65139A1F016002004F4EFB /* LaunchScreen.storyboard in Resources */,
-				4A6514031F01FC5E004F4EFB /* chat_emoji_icon.png in Resources */,
-				4A65140C1F01FC5E004F4EFB /* ItemsItem.xib in Resources */,
-				4A65140A1F01FC5E004F4EFB /* EmojiItem.xib in Resources */,
-				4A65140B1F01FC5E004F4EFB /* EmojiView.xib in Resources */,
-				4A6514041F01FC5E004F4EFB /* chat_keyboard_icon.png in Resources */,
-				4A6514061F01FC5E004F4EFB /* chat_voice_icon.png in Resources */,
-				4A6514051F01FC5E004F4EFB /* chat_more_icon.png in Resources */,
-				4A6514071F01FC5E004F4EFB /* DeleteEmoticonBtn.png in Resources */,
+				4A6514181F020315004F4EFB /* ItemsItem.xib in Resources */,
+				4A6514161F020315004F4EFB /* EmojiItem.xib in Resources */,
+				4A65140F1F020102004F4EFB /* images.bundle in Resources */,
+				4A6514151F020315004F4EFB /* ChatToolBar.xib in Resources */,
+				4A6514171F020315004F4EFB /* EmojiView.xib in Resources */,
+				4A6514191F020315004F4EFB /* ItemsView.xib in Resources */,
 				4A6513971F016002004F4EFB /* Assets.xcassets in Resources */,
 				4A6513951F016002004F4EFB /* Main.storyboard in Resources */,
 			);
