@@ -34,7 +34,7 @@ public struct ItemModel {
     var title: String
     var icon: UIImage
     
-    init(_ title: String, icon: UIImage) {
+    public init(_ title: String, icon: UIImage) {
         self.title = title
         self.icon = icon
     }
