@@ -136,7 +136,7 @@ public class ChatToolBar: UIView {
     
     /// 初始化控件
     private func xibSetup() {
-        view = UINib(nibName: "ChatToolBar", bundle: Bundle(path: Bundle(for: type(of: self)).bundlePath + "/xibs.bundle")).instantiate(withOwner: self, options: nil)[0] as! UIView
+        view = UINib(nibName: "ChatToolBar", bundle: Bundle(path: Bundle(for: type(of: self)).bundlePath + "/resources.bundle")).instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
@@ -177,12 +177,12 @@ public class ChatToolBar: UIView {
         itemsView.delegate = self
         
         let bundle =  Bundle(for: ChatToolBar.classForCoder())
-        leftItem.setImage(UIImage(named:"images.bundle/chat_voice_icon",in:bundle, compatibleWith:nil), for: .normal)
-        leftItem.setImage(UIImage(named:"images.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
-        emojiItem.setImage(UIImage(named:"images.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
-        emojiItem.setImage(UIImage(named:"images.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
-        moreItem.setImage(UIImage(named:"images.bundle/chat_more_icon",in:bundle, compatibleWith:nil), for: .normal)
-        emojiItem.setImage(UIImage(named:"images.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
+        leftItem.setImage(UIImage(named:"resources.bundle/chat_voice_icon",in:bundle, compatibleWith:nil), for: .normal)
+        leftItem.setImage(UIImage(named:"resources.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
+        emojiItem.setImage(UIImage(named:"resources.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
+        emojiItem.setImage(UIImage(named:"resources.bundle/chat_keyboard_icon",in:bundle, compatibleWith:nil), for: .selected)
+        moreItem.setImage(UIImage(named:"resources.bundle/chat_more_icon",in:bundle, compatibleWith:nil), for: .normal)
+        emojiItem.setImage(UIImage(named:"resources.bundle/chat_emoji_icon",in:bundle, compatibleWith:nil), for: .normal)
         
     }
     

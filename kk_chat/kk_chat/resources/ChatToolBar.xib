@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatToolBar" customModule="kk_chat" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatToolBar" customModule="resources" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="adW-Zl-bLh" id="JEL-WK-ySw"/>
                 <outlet property="contentViewHeightConstraint" destination="5fs-cB-RBN" id="imo-Oe-5Pd"/>
@@ -34,10 +34,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adW-Zl-bLh">
                     <rect key="frame" x="0.0" y="54" width="375" height="200"/>
                     <subviews>
-                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-Ka-rbu" customClass="EmojiView" customModule="kk_chat" customModuleProvider="target">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CMv-Ka-rbu" customClass="EmojiView" customModule="kk_chat">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         </view>
-                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-3W-xr0" customClass="ItemsView" customModule="kk_chat" customModuleProvider="target">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwD-3W-xr0" customClass="ItemsView" customModule="kk_chat">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zgx-kt-7AF">

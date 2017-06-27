@@ -30,7 +30,7 @@ class EmojiView: UIView {
     var delegate: EmojiViewDelegate?
     
     fileprivate var emojiDict: [String:[String]] = {
-        let plistPath = Bundle(for: EmojiView.classForCoder()).path(forResource: "emoji", ofType: "plist")
+        let plistPath = Bundle(path: Bundle(for: EmojiView.classForCoder()).bundlePath + "/resources.bundle")?.path(forResource: "emoji", ofType: "plist")
         return NSDictionary(contentsOfFile: plistPath!) as! [String: [String]]
     }()
     
@@ -48,12 +48,12 @@ class EmojiView: UIView {
     }
     
     private func xibSetup() {
-        view = UINib(nibName: "EmojiView", bundle: Bundle(for: type(of: self))).instantiate(withOwner: self, options: nil)[0] as! UIView
+        view = UINib(nibName: "EmojiView", bundle: Bundle(path: Bundle(for: EmojiView.classForCoder()).bundlePath + "/resources.bundle")).instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
         
-        collectionView.register(UINib(nibName: "EmojiItem", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "EmojiItem")
+        collectionView.register(UINib(nibName: "EmojiItem", bundle: Bundle(path: Bundle(for: EmojiView.classForCoder()).bundlePath + "/resources.bundle")), forCellWithReuseIdentifier: "EmojiItem")
         
         collectionView.collectionViewLayout = ChatCollectionViewFlowLayout.chatCollectionViewFlowLayout(sections: 8, rows: 3, pageSize: CGSize(width:kScreenWidth, height:155), pageSpacing: 15, columnSpacing: 0, rowSpacing: 0, edgeInsets: UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0))
         

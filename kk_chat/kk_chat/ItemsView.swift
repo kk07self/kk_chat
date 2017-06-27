@@ -36,13 +36,13 @@ class ItemsView: UIView {
     }
     
     fileprivate func xibSetup() {
-        view = UINib(nibName: "ItemsView", bundle: Bundle(for: type(of: self))).instantiate(withOwner: self, options: nil)[0] as! UIView
+        view = UINib(nibName: "ItemsView", bundle: Bundle(path: Bundle(for: type(of: self)).bundlePath + "/resources.bundle")).instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
         view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         addSubview(view)
 
         collectionView.collectionViewLayout = ChatCollectionViewFlowLayout.chatCollectionViewFlowLayout(sections: 4, rows: 2, pageSize: CGSize(width:kScreenWidth, height:170), pageSpacing: 15, columnSpacing: 0, rowSpacing: 0, edgeInsets: UIEdgeInsets(top: 15, left: 0, bottom: 0, right: 0))
-        collectionView.register(UINib(nibName: "ItemsItem", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "ItemsItem")
+        collectionView.register(UINib(nibName: "ItemsItem", bundle: Bundle(path: Bundle(for: type(of: self)).bundlePath + "/resources.bundle")), forCellWithReuseIdentifier: "ItemsItem")
         collectionView.reloadData()
         pageControl.numberOfPages = items.count / 8 + ((items.count % 8 == 0) ? 0 : 1)
     }
