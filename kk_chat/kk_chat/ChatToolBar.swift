@@ -33,16 +33,40 @@ private let ItemsViewHeight: CGFloat = 215
     ///
     /// - Parameters:
     ///   - chatToolBar: self
-    ///   - time: 开始录音时间
-    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, beginRecord time: NSDate)
+    ///   - button: 按钮
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, beginRecord button: UIButton)
+    
+    
+    /// 正在录音
+    ///
+    /// - Parameters:
+    ///   - chatToolBar: self
+    ///   - button: 按钮
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, recording button: UIButton)
+    
+    
+    /// 手指移入到按钮区域
+    ///
+    /// - Parameters:
+    ///   - chatToolBar: self
+    ///   - button: 按钮
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, inRecord button: UIButton)
+    
+    /// 手指移出按钮区域
+    ///
+    /// - Parameters:
+    ///   - chatToolBar: self
+    ///   - button: 按钮
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, outRecord button: UIButton)
     
     /// 结束录音
     ///
     /// - Parameters:
     ///   - chatToolBar: self
-    ///   - time: 结束录音时间
-    ///   - timeInterval: 开始和结束的时间戳
-    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, endRecord time: NSDate , timeInterval: TimeInterval)
+    ///   - button: 按钮
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, endRecord button: UIButton)
+    
+    
 }
 
 
@@ -51,6 +75,8 @@ private let ItemsViewHeight: CGFloat = 215
 public class ChatToolBar: UIView {
     
     public var delegate: ChatToolBarDelegate?
+    
+    public var recode_min_second: TimeInterval = 1
     
     /// 更多按钮数据
     public var items: [ItemModel]? {
@@ -94,7 +120,7 @@ public class ChatToolBar: UIView {
     fileprivate var view: UIView!
     
     fileprivate var inputText: String = ""
-    fileprivate var beginRecordTime = NSDate()
+    fileprivate var beginRecordTime = Date()
     
     // 记住选中了哪个按钮
     fileprivate var selectedItemIndex: SelectedRightItemIndex = .none
@@ -105,7 +131,7 @@ public class ChatToolBar: UIView {
     @IBOutlet fileprivate weak var moreItem: UIButton!
     
     @IBOutlet fileprivate weak var recordSuperView: UIView!
-    @IBOutlet fileprivate weak var recordLabel: UILabel!
+    @IBOutlet fileprivate weak var recordButton: UIButton!
     @IBOutlet fileprivate weak var recordView: UIView!
     
     @IBOutlet weak var textViewHeightConstraint: NSLayoutConstraint!
@@ -142,15 +168,18 @@ public class ChatToolBar: UIView {
         addSubview(view)
         
         // 录音控件
-        recordLabel.text = "按住 说话"
+        
         recordView.isHidden = true
         recordView.layer.cornerRadius = 5
         recordView.layer.masksToBounds = true
         recordView.layer.borderWidth = 1
         recordView.layer.borderColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1).cgColor
-        recordLabel.isUserInteractionEnabled = true
-        recordLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(recordTap(tap:))))
-        recordLabel.addGestureRecognizer(UILongPressGestureRecognizer(target: self, action: #selector(recordLong(long:))))
+        
+        recordButton.addTarget(self, action: #selector(touchUpInside(button:)), for: .touchUpInside)
+        recordButton.addTarget(self, action: #selector(touchDown(button:)), for: .touchDown)
+        recordButton.addTarget(self, action: #selector(touchUpOutside(button:)), for: .touchUpOutside)
+        recordButton.addTarget(self, action: #selector(touchDragEixt(button:)), for: .touchDragExit)
+        recordButton.addTarget(self, action: #selector(touchDragEnter(button:)), for: .touchDragEnter)
         
         
         // 按钮事件
@@ -212,29 +241,46 @@ public class ChatToolBar: UIView {
 
 // MARK: toolBar录音控件点击事件
 extension ChatToolBar {
-    // 点击比较短的时候
-    func recordTap(tap: UITapGestureRecognizer) {
-        delegate?.shortRecord?(self)
+    
+    func touchUpInside(button: UIButton) {
+        recordView.backgroundColor = UIColor.white
+        recordButton.setTitle("请按住说话", for: .normal)
+        let bti = beginRecordTime.timeIntervalSince1970
+        let eti = Date().timeIntervalSince1970
+        if (eti - bti) < recode_min_second {
+            delegate?.shortRecord?(self)
+            return
+        }
+        delegate?.chatToolBar?(self, endRecord: button)
     }
     
-    // 长按的时候
-    func recordLong(long: UILongPressGestureRecognizer) {
-        
-        if long.state == .began {
-            recordView.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
-            recordLabel.text = "松开 结束"
-            beginRecordTime = NSDate()
-            delegate?.chatToolBar?(self, beginRecord: beginRecordTime)
+    func touchUpOutside(button: UIButton) {
+        recordView.backgroundColor = UIColor.white
+        recordButton.setTitle("请按住说话", for: .normal)
+        let bti = beginRecordTime.timeIntervalSince1970
+        let eti = Date().timeIntervalSince1970
+        if (eti - bti) < recode_min_second {
+            delegate?.shortRecord?(self)
+            return
         }
-        
-        if long.state == .ended {
-            recordView.backgroundColor = UIColor.white
-            recordLabel.text = "按住 录音"
-            let time = NSDate()
-            let bti = beginRecordTime.timeIntervalSince1970
-            let eti = time.timeIntervalSince1970
-            delegate?.chatToolBar?(self, endRecord: time, timeInterval: eti - bti)
-        }
+        delegate?.chatToolBar?(self, endRecord: button)
+    }
+    
+    func touchDown(button: UIButton) {
+        recordView.backgroundColor = UIColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
+        beginRecordTime = Date()
+        recordButton.setTitle("松开 发送", for: .normal)
+        delegate?.chatToolBar?(self, beginRecord: button)
+    }
+    
+    func touchDragEnter(button: UIButton) {
+        recordButton.setTitle("松开 发送", for: .normal)
+        delegate?.chatToolBar?(self, inRecord: button)
+    }
+    
+    func touchDragEixt(button: UIButton) {
+        recordButton.setTitle("松开 取消发送", for: .normal)
+        delegate?.chatToolBar?(self, outRecord: button)
     }
 }
 

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatToolBar" customModule="resources" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatToolBar" customModule="kk_chat" customModuleProvider="target">
             <connections>
                 <outlet property="contentView" destination="adW-Zl-bLh" id="JEL-WK-ySw"/>
                 <outlet property="contentViewHeightConstraint" destination="5fs-cB-RBN" id="imo-Oe-5Pd"/>
@@ -18,7 +18,7 @@
                 <outlet property="itemsView" destination="cwD-3W-xr0" id="PgM-Br-Aws"/>
                 <outlet property="leftItem" destination="pJJ-Af-9us" id="VwH-Oj-6B6"/>
                 <outlet property="moreItem" destination="eSK-sB-s1u" id="Ip7-kv-Cpu"/>
-                <outlet property="recordLabel" destination="dt6-Mo-wUp" id="X1Z-Zs-UeC"/>
+                <outlet property="recordButton" destination="A5e-TP-6xX" id="OeJ-pH-qwf"/>
                 <outlet property="recordSuperView" destination="Pgv-fk-izB" id="Ocg-qR-fqQ"/>
                 <outlet property="recordView" destination="eqG-dB-urd" id="VVz-ua-Hxr"/>
                 <outlet property="rightItemsWidthConstraint" destination="M2a-3a-oxE" id="NaF-Qc-W42"/>
@@ -124,20 +124,21 @@
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eqG-dB-urd">
                                     <rect key="frame" x="0.0" y="10" width="235" height="34"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按住说话" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dt6-Mo-wUp">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5e-TP-6xX">
                                             <rect key="frame" x="0.0" y="0.0" width="235" height="34"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <state key="normal" title="请按住说话">
+                                                <color key="titleColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
-                                        <constraint firstItem="dt6-Mo-wUp" firstAttribute="leading" secondItem="eqG-dB-urd" secondAttribute="leading" id="Hcg-C6-tcZ"/>
-                                        <constraint firstItem="dt6-Mo-wUp" firstAttribute="top" secondItem="eqG-dB-urd" secondAttribute="top" id="MYR-Pa-M7c"/>
-                                        <constraint firstAttribute="bottom" secondItem="dt6-Mo-wUp" secondAttribute="bottom" id="Rbi-k1-FaI"/>
+                                        <constraint firstItem="A5e-TP-6xX" firstAttribute="leading" secondItem="eqG-dB-urd" secondAttribute="leading" id="4bK-V2-D8q"/>
+                                        <constraint firstAttribute="bottom" secondItem="A5e-TP-6xX" secondAttribute="bottom" id="G91-aE-GBk"/>
+                                        <constraint firstAttribute="trailing" secondItem="A5e-TP-6xX" secondAttribute="trailing" id="QYI-jS-MsG"/>
                                         <constraint firstAttribute="height" constant="34" id="ZGZ-ON-khl"/>
-                                        <constraint firstAttribute="trailing" secondItem="dt6-Mo-wUp" secondAttribute="trailing" id="l0A-EB-egL"/>
+                                        <constraint firstItem="A5e-TP-6xX" firstAttribute="top" secondItem="eqG-dB-urd" secondAttribute="top" id="cfm-c3-LXW"/>
                                     </constraints>
                                 </view>
                             </subviews>
