@@ -402,13 +402,6 @@ extension ChatToolBar {
             return
         }
     }
-    
-    /// 刷新布局
-//    fileprivate func layoutAnimation () {
-//        UIView.animate(withDuration: 0.25) { 
-//            self.superview?.layoutIfNeeded()
-//        }
-//    }
 }
 
 
@@ -500,7 +493,7 @@ extension ChatToolBar: UITextViewDelegate {
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "constant" {
             if let height = change?[NSKeyValueChangeKey.newKey] as? CGFloat {
-                delegate?.chatToolBar(self, heightChanged: height + 54)
+                delegate?.chatToolBar(self, heightChanged: height + textViewHeightConstraint.constant + 20)
             }
         }
     }
