@@ -442,6 +442,9 @@ extension ChatToolBar: UITextViewDelegate {
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if text == "\n" {
             delegate?.chatToolBar?(self, didSend: textView.text)
+            textView.text = ""
+            inputText = ""
+            textViewDidChange(textView)
             return false
         }
         return true
