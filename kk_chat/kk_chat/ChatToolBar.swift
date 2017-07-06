@@ -172,6 +172,7 @@ public class ChatToolBar: UIView {
     deinit {
         NotificationCenter.default.removeObserver(self)
         contentViewHeightConstraint.removeObserver(self, forKeyPath: "constant")
+        textViewHeightConstraint.removeObserver(self, forKeyPath: "constant")
     }
     
     /// 初始化控件
@@ -213,6 +214,7 @@ public class ChatToolBar: UIView {
         // 监听通知
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardChange(note:)), name: .UIKeyboardWillChangeFrame, object: nil)
         contentViewHeightConstraint.addObserver(self, forKeyPath: "constant", options: .new, context: nil)
+        textViewHeightConstraint.addObserver(self, forKeyPath: "constant", options: .new, context: nil)
                 
         // 初始化高度
         textViewLastHeight = textViewMinHeight
@@ -492,8 +494,8 @@ extension ChatToolBar: UITextViewDelegate {
     
     public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "constant" {
-            if let height = change?[NSKeyValueChangeKey.newKey] as? CGFloat {
-                delegate?.chatToolBar(self, heightChanged: height + textViewHeightConstraint.constant + 20)
+            if (change?[NSKeyValueChangeKey.newKey] as? CGFloat) != nil {
+                delegate?.chatToolBar(self, heightChanged: contentViewHeightConstraint.constant + textViewHeightConstraint.constant + 20)
             }
         }
     }
