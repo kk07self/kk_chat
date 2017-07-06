@@ -13,6 +13,13 @@ private let ItemsViewHeight: CGFloat = 215
 /// 代理
 @objc public protocol ChatToolBarDelegate: NSObjectProtocol {
     
+    /// 点击键盘的发送按钮
+    ///
+    /// - Parameters:
+    ///   - chatToolBar: self
+    ///   - text: 要发送的内容
+    @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, didSend text: String)
+    
     /// 更多下面的按钮点击
     ///
     /// - Parameters:
@@ -67,6 +74,12 @@ private let ItemsViewHeight: CGFloat = 215
     @objc optional func chatToolBar(_ chatToolBar: ChatToolBar, endRecord button: UIButton)
     
     
+    /// 高度变化
+    ///
+    /// - Parameters:
+    ///   - chatToolBar: self
+    ///   - height: 高度
+    func chatToolBar(_ chatToolBar: ChatToolBar, heightChanged height: CGFloat)
 }
 
 
@@ -158,6 +171,7 @@ public class ChatToolBar: UIView {
     
     deinit {
         NotificationCenter.default.removeObserver(self)
+        contentViewHeightConstraint.removeObserver(self, forKeyPath: "constant")
     }
     
     /// 初始化控件
@@ -194,9 +208,11 @@ public class ChatToolBar: UIView {
         textView.layer.borderWidth = 1
         textView.layer.borderColor = UIColor(red: 200/255.0, green: 200/255.0, blue: 200/255.0, alpha: 1).cgColor
         contentViewHeightConstraint.constant = 0
+        textView.returnKeyType = .send
         
         // 监听通知
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardChange(note:)), name: .UIKeyboardWillChangeFrame, object: nil)
+        contentViewHeightConstraint.addObserver(self, forKeyPath: "constant", options: .new, context: nil)
                 
         // 初始化高度
         textViewLastHeight = textViewMinHeight
@@ -229,7 +245,6 @@ public class ChatToolBar: UIView {
                 self.contentViewHeightConstraint.constant = 0
                 self.selectedItemIndex = .none
                 contentView.isHidden = isHide
-                layoutAnimation()
             }
         } else {
             // 显示
@@ -308,7 +323,6 @@ extension ChatToolBar {
             textView.text = ""
             textView.delegate?.textViewDidChange!(textView)
             contentViewHeightConstraint.constant = 0
-            layoutAnimation()
             
         } else {
             recordView.isHidden = true
@@ -365,7 +379,6 @@ extension ChatToolBar {
             showContentView()
             if self.contentViewHeightConstraint.constant != ItemsViewHeight {
                 self.contentViewHeightConstraint.constant = ItemsViewHeight
-                layoutAnimation()
             }
         } else {
             textView.resignFirstResponder()
@@ -391,11 +404,11 @@ extension ChatToolBar {
     }
     
     /// 刷新布局
-    fileprivate func layoutAnimation () {
-        UIView.animate(withDuration: 0.25) { 
-            self.superview?.layoutIfNeeded()
-        }
-    }
+//    fileprivate func layoutAnimation () {
+//        UIView.animate(withDuration: 0.25) { 
+//            self.superview?.layoutIfNeeded()
+//        }
+//    }
 }
 
 
@@ -431,6 +444,15 @@ extension ChatToolBar: EmojiViewDelegate, ItemsViewDelegate {
 // MARK: 监听textView的内容变化、键盘的变化
 extension ChatToolBar: UITextViewDelegate {
     
+    public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if text == "\n" {
+            delegate?.chatToolBar?(self, didSend: textView.text)
+            return false
+        }
+        return true
+    }
+
+    
     public func textViewDidChange(_ textView: UITextView) {
         inputText = textView.text
         
@@ -463,7 +485,6 @@ extension ChatToolBar: UITextViewDelegate {
             
             // 再布局
             textViewHeightConstraint.constant = height
-            layoutAnimation()
             UIView.animate(withDuration: 0.25, animations: {
                 self.textView.scrollRangeToVisible(NSRange(location: self.textView.text.characters.count, length: 1))
             })
@@ -476,6 +497,14 @@ extension ChatToolBar: UITextViewDelegate {
         }
     }
     
+    public override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "constant" {
+            if let height = change?[NSKeyValueChangeKey.newKey] as? CGFloat {
+                delegate?.chatToolBar(self, heightChanged: height + 54)
+            }
+        }
+    }
+    
     @objc fileprivate func keyboardChange(note: NSNotification) {
         // 键盘信息
         let size = (note.userInfo?[UIKeyboardFrameEndUserInfoKey] as! CGRect).size
@@ -483,6 +512,5 @@ extension ChatToolBar: UITextViewDelegate {
         // origin.y < kscreenHeight  显示键盘；> 隐藏键盘，切需要判断是不是显示emoji键盘
         self.contentViewHeightConstraint.constant = origin.y < kScreenHeight ? size.height : (selectedItemIndex == .none ? 0 : ItemsViewHeight)
         contentView.isHidden = selectedItemIndex == .none
-        layoutAnimation()
     }
 }
