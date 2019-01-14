@@ -1,5 +1,5 @@
 PODS:
-  - kk_chat (1.2.5)
+  - kk_chat (1.3.0)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -12,7 +12,7 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  kk_chat: 2303fb18c5c95ec2843f839e3b688b66b7795ed0
+  kk_chat: 43a4a4a1ede894c5f207acf896bcc1c0798149af
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: aa2cb1dc4064d434c37b254749f5ef5a04b70676
