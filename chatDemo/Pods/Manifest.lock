@@ -1,0 +1,20 @@
+PODS:
+  - kk_chat (1.2.5)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - kk_chat
+  - SnapKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - kk_chat
+    - SnapKit
+
+SPEC CHECKSUMS:
+  kk_chat: 2303fb18c5c95ec2843f839e3b688b66b7795ed0
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: aa2cb1dc4064d434c37b254749f5ef5a04b70676
+
+COCOAPODS: 1.5.3

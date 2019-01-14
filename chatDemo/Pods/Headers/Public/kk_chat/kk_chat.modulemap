@@ -1,0 +1,6 @@
+module kk_chat {
+  umbrella header "kk_chat-umbrella.h"
+
+  export *
+  module * { export * }
+}

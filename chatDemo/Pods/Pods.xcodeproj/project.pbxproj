@@ -1,0 +1,1040 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0096ADCE9A975A5890279DA23B341F33 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A25D7A26CB78023843DDA1646F6176 /* ConstraintMakerFinalizable.swift */; };
+		05C110DA0C1A38266DDFEAC9318BB30B /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8B1A83E56DD2694EA6B10FE5878EBC /* ConstraintMakerRelatable.swift */; };
+		09FB38BD443506FE2ED26EEEF1F596B4 /* kk_chat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8815F3314CAC30160A039036BECC6C46 /* kk_chat-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0A5E4E9FCC79EFE0A63CAC43BC518A00 /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF856822806BBFB2BFBC47B2F5D6752E /* ChatHelper.swift */; };
+		0CC39CE1E07137255B6A0C105EA48180 /* chat_emoji_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E393583A11A300266F080E210F5E9E8 /* chat_emoji_icon.png */; };
+		172C2F8412EFA019574BB33E0CE36762 /* EmojiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C73D99AE3957A4ED6C81AD4FC1743BCE /* EmojiView.xib */; };
+		1A3BACB09D5C511011339E8C96BCFBCF /* ChatCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD53D5CAA101340E60A7EA823B4EE75 /* ChatCollectionViewFlowLayout.swift */; };
+		1DBA3EA029305BC11FFEEFA6AD95F2A3 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E5F4E87D104F02B2720E4BFFE64CFEA /* LayoutConstraint.swift */; };
+		229F47382BBED568970EA05ACF4520F9 /* kk_chat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA64E6C5E50B6833FA65BC7414243577 /* kk_chat-dummy.m */; };
+		29723BB3856B9A924C6EAA3D891BC61D /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276C89AB19EF852EC8931F226B8938F1 /* ConstraintMultiplierTarget.swift */; };
+		34DFDAC029A3BCD857AFB6B7D9BC6CE0 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E1C035B053CCC8E1D8A12889779ED6 /* SnapKit-dummy.m */; };
+		3574080CBFD4282710B938E78C1FB8F8 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01116FB21BC286EE75E40DF545DF9866 /* ConstraintMaker.swift */; };
+		38F93910DCEC74FF29D2EFAB9E009F23 /* chat_more_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F506DDF8424597AA78FB6806577D4F0E /* chat_more_icon.png */; };
+		47B2DA2CE3F734B3DCA80E17E473299E /* emoji.plist in Resources */ = {isa = PBXBuildFile; fileRef = C72F72E78212B617AFEC837AE54301CA /* emoji.plist */; };
+		482C228DED08F96B0828619EB3390DE0 /* ItemsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7C35974BB8DCCA568B27FE2B86EA85C /* ItemsView.xib */; };
+		4DAD5E065E73D957EADC0A190C14B874 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02D9F7AD9E6B984AA961D9E164043E /* ConstraintInsetTarget.swift */; };
+		5211D8BE9DA2E879E90066164C64B2A1 /* EmojiItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33183281B298EC94A833A2B2DDFBE86C /* EmojiItem.xib */; };
+		5A239C875AFE0AD2D5C166D72B2BB2F0 /* EmojiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD95045EE0418F152826DD899E31D40 /* EmojiView.swift */; };
+		68C27739926EBB1A39384046119A3036 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2245339DC1FC1A3D23ADAE0102CB5862 /* Typealiases.swift */; };
+		6A6B1DD1C02A750910691A7A0A1EC46E /* ItemsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE27134815AA5E4D4AD7B75CCC35E899 /* ItemsItem.swift */; };
+		7101D8252FA1434A5E8410FB177D15C1 /* ChatToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC35ED72F6D61612CBAF771A33F03C11 /* ChatToolBar.swift */; };
+		7EA5D19366C319D4CC920129E870F07E /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C485AB7239A2D1088A03CB925AB466 /* ConstraintPriorityTarget.swift */; };
+		88C474DDEC0AEF01220DCDCA96281D3E /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A8AD7E435E5DFC7788773A5CBAFE97 /* Debugging.swift */; };
+		8C9BFB98C2D79AE959E32B524C5C1CDF /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F58E9E66E522D2F77B7FFE93E74AEB /* ConstraintMakerExtendable.swift */; };
+		8F4493859BE07A49AD22D58BA40747E8 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260F12D2BC8B5263C1E5385A624FBE58 /* ConstraintItem.swift */; };
+		9206427F7845DE82E68276DC2CFF7A3A /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6773BEE9CFEC86E76B76E3DEDAE4738 /* ConstraintLayoutGuideDSL.swift */; };
+		93474454AB2521BDA2E2F4221508BBA7 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16AD062A7F5B7A0B1F915F54AF7A48A /* ConstraintViewDSL.swift */; };
+		941680D4A808BD468A026A7199DDC89C /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D38DF8DBE6EBA8DCEDA61D893BDA620 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98D3F87AAB63F91A4DEFC8618E1F80A3 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C9E24F7E2055B04F4240EC34E8CFA /* ConstraintRelation.swift */; };
+		98F2E3AA8F9B4F49AA954860D1D99E74 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA6CDB5008017B1E04EB08E4DC8B25C /* Constraint.swift */; };
+		9A6F98C3156E0419F1E4FDE7996B8DF9 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF44D63D01A5D221B97DFAC41043A15 /* ConstraintLayoutSupportDSL.swift */; };
+		9E1002EBA51FE83BF1EB08EB8A91022E /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F20D6334E539EB8042B5158CB6F3050 /* ConstraintPriority.swift */; };
+		9FC85FD169BBCC5544F7EAB2E01586B7 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE205EC432700836846D1891FCA5E09 /* ConstraintMakerPriortizable.swift */; };
+		9FCA2F68AB9B605999AFCD9D9E91A544 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B528E431606A375569437CDF0E657E /* ConstraintConfig.swift */; };
+		A666395A2FAB36E49B51F0CCAFD41ED0 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91BFC7D06D5434474B82B56740983D0 /* ConstraintView+Extensions.swift */; };
+		AF6DF59B30C6A839EFBB4BA287A19F91 /* ChatToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7C739EE17EBF655BD1D68E8A0E158A2 /* ChatToolBar.xib */; };
+		B11E353B77E086BF4D3C41529319BF28 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F60248F7BE4E6E5B8ED800B84E1B809 /* ConstraintMakerEditable.swift */; };
+		B5BAB24A256D7685FFD22DCC632D188C /* chat_keyboard_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5398FD521212D7A09F1A00A2FFC20658 /* chat_keyboard_icon.png */; };
+		BB126289B358A0D582E5248434643BFB /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BFA8AED4D429790B16E6CAD0372D9 /* ConstraintAttributes.swift */; };
+		BF74CEDA7CC7D88D0E5770B23CD7834C /* DeleteEmoticonBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = D359705BE2DA49E3D5892FAC6ED22C9F /* DeleteEmoticonBtn.png */; };
+		C54D24F09B889DE9D7122DE5C234203E /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D684CAD513472A79126ACB363BDA5351 /* ConstraintConstantTarget.swift */; };
+		C7F26321313FEAC31759CE8B5C1340E1 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F4D5A8F186D1C4354DDE031F5D883 /* ItemsView.swift */; };
+		C82BE2ECAD6D36548590AE9614D0968E /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3706F982F122D85047A5A4B9F87140A /* ConstraintDSL.swift */; };
+		CB4C07D6C37565C907988F99DB7A832F /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBB6C683DC76113AA9CAD216D3B4DF /* ConstraintView.swift */; };
+		CE17EB948FF08343F1C64007D4974594 /* chat_voice_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0910D7B9792982B6878F1AA6A257181F /* chat_voice_icon.png */; };
+		D70AC73F4E2779BAC3FECF05AF15BC99 /* EmojiItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61984B99770A857A33295CEC0A155F9 /* EmojiItem.swift */; };
+		DB1DCC30AF5ACC7185B37D6E00ACC65C /* Pods-chatDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA0CACB379B0D47DE0151C1D0115E9CC /* Pods-chatDemo-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC3FF1EC412E47ED9CAD33610B28641E /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF419BBE871B1FAC869608B805E3DC7 /* ConstraintOffsetTarget.swift */; };
+		DDA3D7B078291A21C26B8CC18B0D8573 /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD4A8905083DB9619F3B4650B56CE00 /* UILayoutSupport+Extensions.swift */; };
+		DEC8251851C896AA5FF0501F6D4576AB /* ItemsItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E42208D781A3EE6919DD59FC92EE5F7 /* ItemsItem.xib */; };
+		E2CCDF9AF5A8C57BB9F27E52A6DC53DF /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7F0E50CE6C88A68C36A46703160A7A /* ConstraintLayoutGuide.swift */; };
+		E4AA887E3619B2D3063DEE7598FAE483 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03EDB87223F50537DDE644F813A74565 /* ConstraintLayoutSupport.swift */; };
+		E53A9D3CCE93406BFCB9A4C299F992A1 /* Pods-chatDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7608FE814C8995DB7B9BB5D92977DBB /* Pods-chatDemo-dummy.m */; };
+		F9AFEC3208B46DDC8AA73E685B8BF440 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDEEBE1A5B89BCDC5516D4418F130E6 /* LayoutConstraintItem.swift */; };
+		FA2D93D94F42BFF4FF706FF56DAB218F /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0A94FB8CB411AC2334A395AF08864 /* ConstraintRelatableTarget.swift */; };
+		FE78DFF2145384C58BA7351CC97E045D /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29B11CAFF29DB7592E974BF8BC53C98 /* ConstraintDescription.swift */; };
+		FE8E8FDD0CAF824655A72A5F7A37EFE6 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B540AEF664FEA51F96FFAA94A2F03A34 /* ConstraintLayoutGuide+Extensions.swift */; };
+		FFE05ABF4B91D72FAC98723017B333F2 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B585329AEB09598A047EEF66C2B5CFA /* ConstraintInsets.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1226BA5F7E27D8AA1A6A74C24D9F0931 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B993D0DADBC3E7CBBEC0BC8700531A8;
+			remoteInfo = "kk_chat-resources";
+		};
+		6E8422F3131E63B98580E27D1480518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A1B2AA6AC935920840A471FB997DE41;
+			remoteInfo = SnapKit;
+		};
+		D5B83962563B913CEAE8BED1111513B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6AE34DE25512E5E6CA3C761B8E8BFAEC;
+			remoteInfo = kk_chat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01116FB21BC286EE75E40DF545DF9866 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		02C485AB7239A2D1088A03CB925AB466 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		03EDB87223F50537DDE644F813A74565 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		056ACD2F6904330B284F2F9EA5381BD6 /* kk_chat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kk_chat-prefix.pch"; sourceTree = "<group>"; };
+		0910D7B9792982B6878F1AA6A257181F /* chat_voice_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_voice_icon.png; path = kk_chat/kk_chat/resources/chat_voice_icon.png; sourceTree = "<group>"; };
+		0BD95045EE0418F152826DD899E31D40 /* EmojiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiView.swift; path = kk_chat/kk_chat/EmojiView.swift; sourceTree = "<group>"; };
+		0EF419BBE871B1FAC869608B805E3DC7 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		0F60248F7BE4E6E5B8ED800B84E1B809 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		0FA6CDB5008017B1E04EB08E4DC8B25C /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		1DC621EBECFBA3CD2A6607A157DE329A /* Pods-chatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		1E02D9F7AD9E6B984AA961D9E164043E /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		2245339DC1FC1A3D23ADAE0102CB5862 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		260F12D2BC8B5263C1E5385A624FBE58 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		276C89AB19EF852EC8931F226B8938F1 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		33183281B298EC94A833A2B2DDFBE86C /* EmojiItem.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmojiItem.xib; path = kk_chat/kk_chat/resources/EmojiItem.xib; sourceTree = "<group>"; };
+		35B1501E3A96FF156295E97E0EAB0773 /* Pods-chatDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-chatDemo.modulemap"; sourceTree = "<group>"; };
+		36C027A0AF0EBE597910DD31628C5DEE /* resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = resources.bundle; path = "kk_chat-resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACBB6C683DC76113AA9CAD216D3B4DF /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		3DDEEBE1A5B89BCDC5516D4418F130E6 /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		3E393583A11A300266F080E210F5E9E8 /* chat_emoji_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_emoji_icon.png; path = kk_chat/kk_chat/resources/chat_emoji_icon.png; sourceTree = "<group>"; };
+		43B528E431606A375569437CDF0E657E /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		4D38DF8DBE6EBA8DCEDA61D893BDA620 /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SnapKit-umbrella.h"; path = "../../Headers/Public/SnapKit/SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		5398FD521212D7A09F1A00A2FFC20658 /* chat_keyboard_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_keyboard_icon.png; path = kk_chat/kk_chat/resources/chat_keyboard_icon.png; sourceTree = "<group>"; };
+		5673A349B27272656D489E7FA8B01AB9 /* libPods-chatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-chatDemo.a"; path = "libPods-chatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F20D6334E539EB8042B5158CB6F3050 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		66F58E9E66E522D2F77B7FFE93E74AEB /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		6FD4A8905083DB9619F3B4650B56CE00 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		807F4D5A8F186D1C4354DDE031F5D883 /* ItemsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemsView.swift; path = kk_chat/kk_chat/ItemsView.swift; sourceTree = "<group>"; };
+		819C38999DAFA4B37C802605E59BD6B1 /* libSnapKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSnapKit.a; path = libSnapKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8815F3314CAC30160A039036BECC6C46 /* kk_chat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "kk_chat-umbrella.h"; path = "../../Headers/Public/kk_chat/kk_chat-umbrella.h"; sourceTree = "<group>"; };
+		8E42208D781A3EE6919DD59FC92EE5F7 /* ItemsItem.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ItemsItem.xib; path = kk_chat/kk_chat/resources/ItemsItem.xib; sourceTree = "<group>"; };
+		90A25D7A26CB78023843DDA1646F6176 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9510E373BE2D00739310BC1FDB72F5D9 /* Pods-chatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-chatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = kk_chat.xcconfig; sourceTree = "<group>"; };
+		9B585329AEB09598A047EEF66C2B5CFA /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		9E5F4E87D104F02B2720E4BFFE64CFEA /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		9F816F59BC66DB18FD23087EDCF340FE /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = SnapKit.modulemap; path = ../../Headers/Public/SnapKit/SnapKit.modulemap; sourceTree = "<group>"; };
+		A1E1C035B053CCC8E1D8A12889779ED6 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		A33BFA8AED4D429790B16E6CAD0372D9 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		A7608FE814C8995DB7B9BB5D92977DBB /* Pods-chatDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-chatDemo-dummy.m"; sourceTree = "<group>"; };
+		A7C739EE17EBF655BD1D68E8A0E158A2 /* ChatToolBar.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ChatToolBar.xib; path = kk_chat/kk_chat/resources/ChatToolBar.xib; sourceTree = "<group>"; };
+		A88C9E24F7E2055B04F4240EC34E8CFA /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		AC2B8BCE1F89B6C963D1D268BA117889 /* Pods-chatDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-chatDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		ACD53D5CAA101340E60A7EA823B4EE75 /* ChatCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatCollectionViewFlowLayout.swift; path = kk_chat/kk_chat/ChatCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		B29B11CAFF29DB7592E974BF8BC53C98 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		B3A8AD7E435E5DFC7788773A5CBAFE97 /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		B540AEF664FEA51F96FFAA94A2F03A34 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		B61984B99770A857A33295CEC0A155F9 /* EmojiItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiItem.swift; path = kk_chat/kk_chat/EmojiItem.swift; sourceTree = "<group>"; };
+		BA0CACB379B0D47DE0151C1D0115E9CC /* Pods-chatDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-chatDemo-umbrella.h"; sourceTree = "<group>"; };
+		BC35ED72F6D61612CBAF771A33F03C11 /* ChatToolBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatToolBar.swift; path = kk_chat/kk_chat/ChatToolBar.swift; sourceTree = "<group>"; };
+		C13CFA05C2C4A6BAC4C33001EB0954C2 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		C16AD062A7F5B7A0B1F915F54AF7A48A /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		C18D7EA7BEC58076F0ADEB2ED70495FE /* libkk_chat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libkk_chat.a; path = libkk_chat.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2530494F78A48A4EC609F8660B2BD43 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		C3706F982F122D85047A5A4B9F87140A /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		C72F72E78212B617AFEC837AE54301CA /* emoji.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = emoji.plist; path = kk_chat/kk_chat/resources/emoji.plist; sourceTree = "<group>"; };
+		C73D99AE3957A4ED6C81AD4FC1743BCE /* EmojiView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EmojiView.xib; path = kk_chat/kk_chat/resources/EmojiView.xib; sourceTree = "<group>"; };
+		C7C35974BB8DCCA568B27FE2B86EA85C /* ItemsView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ItemsView.xib; path = kk_chat/kk_chat/resources/ItemsView.xib; sourceTree = "<group>"; };
+		CB28B2BA24EA6E2B57DEFF28636BD7F8 /* ResourceBundle-resources-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-resources-Info.plist"; sourceTree = "<group>"; };
+		CE8B1A83E56DD2694EA6B10FE5878EBC /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		CEE205EC432700836846D1891FCA5E09 /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D2B61AAFA4403F353C98196737A814D1 /* Pods-chatDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-chatDemo-resources.sh"; sourceTree = "<group>"; };
+		D359705BE2DA49E3D5892FAC6ED22C9F /* DeleteEmoticonBtn.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = DeleteEmoticonBtn.png; path = kk_chat/kk_chat/resources/DeleteEmoticonBtn.png; sourceTree = "<group>"; };
+		D6773BEE9CFEC86E76B76E3DEDAE4738 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		D684CAD513472A79126ACB363BDA5351 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		D6E0A94FB8CB411AC2334A395AF08864 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		DA18787B36A91F2CD98FF37F1E08A84E /* Pods-chatDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-chatDemo-frameworks.sh"; sourceTree = "<group>"; };
+		DF856822806BBFB2BFBC47B2F5D6752E /* ChatHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatHelper.swift; path = kk_chat/kk_chat/ChatHelper.swift; sourceTree = "<group>"; };
+		E1E2B2F0E418B2D0971969A0071BA9B2 /* Pods-chatDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-chatDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E91BFC7D06D5434474B82B56740983D0 /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		EA64E6C5E50B6833FA65BC7414243577 /* kk_chat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kk_chat-dummy.m"; sourceTree = "<group>"; };
+		ED7F0E50CE6C88A68C36A46703160A7A /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		F506DDF8424597AA78FB6806577D4F0E /* chat_more_icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = chat_more_icon.png; path = kk_chat/kk_chat/resources/chat_more_icon.png; sourceTree = "<group>"; };
+		F94C1F8FCD678C1AA8D5C0707E074310 /* kk_chat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = kk_chat.modulemap; path = ../../Headers/Public/kk_chat/kk_chat.modulemap; sourceTree = "<group>"; };
+		FDF44D63D01A5D221B97DFAC41043A15 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		FE27134815AA5E4D4AD7B75CCC35E899 /* ItemsItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ItemsItem.swift; path = kk_chat/kk_chat/ItemsItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		400F15D70579093C61B3AFAFBA8750BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A93C8159A4091D1C1A32191D1A12B315 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01B9C926119CEFE70453B150172C104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9EB36085C408C7E0C9252703C2FECDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2139A8DDFC7B01C7239B02FF4FE83421 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				0FA6CDB5008017B1E04EB08E4DC8B25C /* Constraint.swift */,
+				A33BFA8AED4D429790B16E6CAD0372D9 /* ConstraintAttributes.swift */,
+				43B528E431606A375569437CDF0E657E /* ConstraintConfig.swift */,
+				D684CAD513472A79126ACB363BDA5351 /* ConstraintConstantTarget.swift */,
+				B29B11CAFF29DB7592E974BF8BC53C98 /* ConstraintDescription.swift */,
+				C3706F982F122D85047A5A4B9F87140A /* ConstraintDSL.swift */,
+				9B585329AEB09598A047EEF66C2B5CFA /* ConstraintInsets.swift */,
+				1E02D9F7AD9E6B984AA961D9E164043E /* ConstraintInsetTarget.swift */,
+				260F12D2BC8B5263C1E5385A624FBE58 /* ConstraintItem.swift */,
+				ED7F0E50CE6C88A68C36A46703160A7A /* ConstraintLayoutGuide.swift */,
+				B540AEF664FEA51F96FFAA94A2F03A34 /* ConstraintLayoutGuide+Extensions.swift */,
+				D6773BEE9CFEC86E76B76E3DEDAE4738 /* ConstraintLayoutGuideDSL.swift */,
+				03EDB87223F50537DDE644F813A74565 /* ConstraintLayoutSupport.swift */,
+				FDF44D63D01A5D221B97DFAC41043A15 /* ConstraintLayoutSupportDSL.swift */,
+				01116FB21BC286EE75E40DF545DF9866 /* ConstraintMaker.swift */,
+				0F60248F7BE4E6E5B8ED800B84E1B809 /* ConstraintMakerEditable.swift */,
+				66F58E9E66E522D2F77B7FFE93E74AEB /* ConstraintMakerExtendable.swift */,
+				90A25D7A26CB78023843DDA1646F6176 /* ConstraintMakerFinalizable.swift */,
+				CEE205EC432700836846D1891FCA5E09 /* ConstraintMakerPriortizable.swift */,
+				CE8B1A83E56DD2694EA6B10FE5878EBC /* ConstraintMakerRelatable.swift */,
+				276C89AB19EF852EC8931F226B8938F1 /* ConstraintMultiplierTarget.swift */,
+				0EF419BBE871B1FAC869608B805E3DC7 /* ConstraintOffsetTarget.swift */,
+				5F20D6334E539EB8042B5158CB6F3050 /* ConstraintPriority.swift */,
+				02C485AB7239A2D1088A03CB925AB466 /* ConstraintPriorityTarget.swift */,
+				D6E0A94FB8CB411AC2334A395AF08864 /* ConstraintRelatableTarget.swift */,
+				A88C9E24F7E2055B04F4240EC34E8CFA /* ConstraintRelation.swift */,
+				3ACBB6C683DC76113AA9CAD216D3B4DF /* ConstraintView.swift */,
+				E91BFC7D06D5434474B82B56740983D0 /* ConstraintView+Extensions.swift */,
+				C16AD062A7F5B7A0B1F915F54AF7A48A /* ConstraintViewDSL.swift */,
+				B3A8AD7E435E5DFC7788773A5CBAFE97 /* Debugging.swift */,
+				9E5F4E87D104F02B2720E4BFFE64CFEA /* LayoutConstraint.swift */,
+				3DDEEBE1A5B89BCDC5516D4418F130E6 /* LayoutConstraintItem.swift */,
+				2245339DC1FC1A3D23ADAE0102CB5862 /* Typealiases.swift */,
+				6FD4A8905083DB9619F3B4650B56CE00 /* UILayoutSupport+Extensions.swift */,
+				D2D92EBC295ED1E33CDB7132CE1CB7EC /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		5E9D0E64F857684D56034720698BA1C4 /* Pods-chatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				35B1501E3A96FF156295E97E0EAB0773 /* Pods-chatDemo.modulemap */,
+				E1E2B2F0E418B2D0971969A0071BA9B2 /* Pods-chatDemo-acknowledgements.markdown */,
+				AC2B8BCE1F89B6C963D1D268BA117889 /* Pods-chatDemo-acknowledgements.plist */,
+				A7608FE814C8995DB7B9BB5D92977DBB /* Pods-chatDemo-dummy.m */,
+				DA18787B36A91F2CD98FF37F1E08A84E /* Pods-chatDemo-frameworks.sh */,
+				D2B61AAFA4403F353C98196737A814D1 /* Pods-chatDemo-resources.sh */,
+				BA0CACB379B0D47DE0151C1D0115E9CC /* Pods-chatDemo-umbrella.h */,
+				1DC621EBECFBA3CD2A6607A157DE329A /* Pods-chatDemo.debug.xcconfig */,
+				9510E373BE2D00739310BC1FDB72F5D9 /* Pods-chatDemo.release.xcconfig */,
+			);
+			name = "Pods-chatDemo";
+			path = "Target Support Files/Pods-chatDemo";
+			sourceTree = "<group>";
+		};
+		707A8BB22927A8D435B6E75AB1A64CA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E393583A11A300266F080E210F5E9E8 /* chat_emoji_icon.png */,
+				5398FD521212D7A09F1A00A2FFC20658 /* chat_keyboard_icon.png */,
+				F506DDF8424597AA78FB6806577D4F0E /* chat_more_icon.png */,
+				0910D7B9792982B6878F1AA6A257181F /* chat_voice_icon.png */,
+				A7C739EE17EBF655BD1D68E8A0E158A2 /* ChatToolBar.xib */,
+				D359705BE2DA49E3D5892FAC6ED22C9F /* DeleteEmoticonBtn.png */,
+				C72F72E78212B617AFEC837AE54301CA /* emoji.plist */,
+				33183281B298EC94A833A2B2DDFBE86C /* EmojiItem.xib */,
+				C73D99AE3957A4ED6C81AD4FC1743BCE /* EmojiView.xib */,
+				8E42208D781A3EE6919DD59FC92EE5F7 /* ItemsItem.xib */,
+				C7C35974BB8DCCA568B27FE2B86EA85C /* ItemsView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		79AF8BB18D782F96A5C38156049F69AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A8707C8A7D5763E2A1E6C44387AA8B6E /* kk_chat */,
+				2139A8DDFC7B01C7239B02FF4FE83421 /* SnapKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				79AF8BB18D782F96A5C38156049F69AD /* Pods */,
+				F16D6DFA0BFA41C728320877C8372C4C /* Products */,
+				D9B14D83B00B218CB50D9098EC568F38 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A8707C8A7D5763E2A1E6C44387AA8B6E /* kk_chat */ = {
+			isa = PBXGroup;
+			children = (
+				ACD53D5CAA101340E60A7EA823B4EE75 /* ChatCollectionViewFlowLayout.swift */,
+				DF856822806BBFB2BFBC47B2F5D6752E /* ChatHelper.swift */,
+				BC35ED72F6D61612CBAF771A33F03C11 /* ChatToolBar.swift */,
+				B61984B99770A857A33295CEC0A155F9 /* EmojiItem.swift */,
+				0BD95045EE0418F152826DD899E31D40 /* EmojiView.swift */,
+				FE27134815AA5E4D4AD7B75CCC35E899 /* ItemsItem.swift */,
+				807F4D5A8F186D1C4354DDE031F5D883 /* ItemsView.swift */,
+				707A8BB22927A8D435B6E75AB1A64CA5 /* Resources */,
+				BBCD203ADC0F1000B1BED76C755A9482 /* Support Files */,
+			);
+			name = kk_chat;
+			path = kk_chat;
+			sourceTree = "<group>";
+		};
+		BBCD203ADC0F1000B1BED76C755A9482 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F94C1F8FCD678C1AA8D5C0707E074310 /* kk_chat.modulemap */,
+				99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */,
+				EA64E6C5E50B6833FA65BC7414243577 /* kk_chat-dummy.m */,
+				056ACD2F6904330B284F2F9EA5381BD6 /* kk_chat-prefix.pch */,
+				8815F3314CAC30160A039036BECC6C46 /* kk_chat-umbrella.h */,
+				CB28B2BA24EA6E2B57DEFF28636BD7F8 /* ResourceBundle-resources-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/kk_chat";
+			sourceTree = "<group>";
+		};
+		D2D92EBC295ED1E33CDB7132CE1CB7EC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F816F59BC66DB18FD23087EDCF340FE /* SnapKit.modulemap */,
+				C13CFA05C2C4A6BAC4C33001EB0954C2 /* SnapKit.xcconfig */,
+				A1E1C035B053CCC8E1D8A12889779ED6 /* SnapKit-dummy.m */,
+				C2530494F78A48A4EC609F8660B2BD43 /* SnapKit-prefix.pch */,
+				4D38DF8DBE6EBA8DCEDA61D893BDA620 /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		D9B14D83B00B218CB50D9098EC568F38 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E9D0E64F857684D56034720698BA1C4 /* Pods-chatDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F16D6DFA0BFA41C728320877C8372C4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18D7EA7BEC58076F0ADEB2ED70495FE /* libkk_chat.a */,
+				5673A349B27272656D489E7FA8B01AB9 /* libPods-chatDemo.a */,
+				819C38999DAFA4B37C802605E59BD6B1 /* libSnapKit.a */,
+				36C027A0AF0EBE597910DD31628C5DEE /* resources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		08E7A0C636F0EBD54DDB3C9EEEFB548C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1DCC30AF5ACC7185B37D6E00ACC65C /* Pods-chatDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CD5E5A9239F567F06F164101EAE5959 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09FB38BD443506FE2ED26EEEF1F596B4 /* kk_chat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51E6D991AA30F77B4DC2B88B53C35651 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941680D4A808BD468A026A7199DDC89C /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B993D0DADBC3E7CBBEC0BC8700531A8 /* kk_chat-resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFB40A8C6CB44E914492314855F457A /* Build configuration list for PBXNativeTarget "kk_chat-resources" */;
+			buildPhases = (
+				DE35D815C959C6B87049E62F61B6859A /* Sources */,
+				400F15D70579093C61B3AFAFBA8750BC /* Frameworks */,
+				6B08D57F4F344C1C04A0630F6D3C9EE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "kk_chat-resources";
+			productName = "kk_chat-resources";
+			productReference = 36C027A0AF0EBE597910DD31628C5DEE /* resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6A1B2AA6AC935920840A471FB997DE41 /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 664EB621CD4B1B44E142957351FCD1DD /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				51E6D991AA30F77B4DC2B88B53C35651 /* Headers */,
+				E5EDAACDF740CEF02E9BBDA0E75EE884 /* Sources */,
+				C01B9C926119CEFE70453B150172C104 /* Frameworks */,
+				CDF745446F417DBE8F5AF34DC4BB0828 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 819C38999DAFA4B37C802605E59BD6B1 /* libSnapKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		6AE34DE25512E5E6CA3C761B8E8BFAEC /* kk_chat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52A4D08426A941D4DE973C58E7154E4 /* Build configuration list for PBXNativeTarget "kk_chat" */;
+			buildPhases = (
+				2CD5E5A9239F567F06F164101EAE5959 /* Headers */,
+				5C6BF0E13E56C13A16716EA525CA28F8 /* Sources */,
+				A93C8159A4091D1C1A32191D1A12B315 /* Frameworks */,
+				44A4F931BBD701C034E57B91B3627454 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2F5B62CF4E988633A8C4C3039AEF3F /* PBXTargetDependency */,
+			);
+			name = kk_chat;
+			productName = kk_chat;
+			productReference = C18D7EA7BEC58076F0ADEB2ED70495FE /* libkk_chat.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7D10D20F3E0BEF5A6E27D760A64E83E0 /* Pods-chatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF99481B7762026649DC2D712F6016A /* Build configuration list for PBXNativeTarget "Pods-chatDemo" */;
+			buildPhases = (
+				08E7A0C636F0EBD54DDB3C9EEEFB548C /* Headers */,
+				6578524D383C10F5A3490078482F943C /* Sources */,
+				F9EB36085C408C7E0C9252703C2FECDC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81EB8483656B24DF59D544AB2D95006E /* PBXTargetDependency */,
+				313FF4128CB28C1AE404E5EA29F4C02C /* PBXTargetDependency */,
+			);
+			name = "Pods-chatDemo";
+			productName = "Pods-chatDemo";
+			productReference = 5673A349B27272656D489E7FA8B01AB9 /* libPods-chatDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F16D6DFA0BFA41C728320877C8372C4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AE34DE25512E5E6CA3C761B8E8BFAEC /* kk_chat */,
+				0B993D0DADBC3E7CBBEC0BC8700531A8 /* kk_chat-resources */,
+				7D10D20F3E0BEF5A6E27D760A64E83E0 /* Pods-chatDemo */,
+				6A1B2AA6AC935920840A471FB997DE41 /* SnapKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B08D57F4F344C1C04A0630F6D3C9EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC39CE1E07137255B6A0C105EA48180 /* chat_emoji_icon.png in Resources */,
+				B5BAB24A256D7685FFD22DCC632D188C /* chat_keyboard_icon.png in Resources */,
+				38F93910DCEC74FF29D2EFAB9E009F23 /* chat_more_icon.png in Resources */,
+				CE17EB948FF08343F1C64007D4974594 /* chat_voice_icon.png in Resources */,
+				AF6DF59B30C6A839EFBB4BA287A19F91 /* ChatToolBar.xib in Resources */,
+				BF74CEDA7CC7D88D0E5770B23CD7834C /* DeleteEmoticonBtn.png in Resources */,
+				47B2DA2CE3F734B3DCA80E17E473299E /* emoji.plist in Resources */,
+				5211D8BE9DA2E879E90066164C64B2A1 /* EmojiItem.xib in Resources */,
+				172C2F8412EFA019574BB33E0CE36762 /* EmojiView.xib in Resources */,
+				DEC8251851C896AA5FF0501F6D4576AB /* ItemsItem.xib in Resources */,
+				482C228DED08F96B0828619EB3390DE0 /* ItemsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		44A4F931BBD701C034E57B91B3627454 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/kk_chat/kk_chat.modulemap",
+				"${PODS_ROOT}/Headers/Public/kk_chat/kk_chat-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/kk_chat-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/kk_chat/kk_chat.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/kk_chat/kk_chat-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+		CDF745446F417DBE8F5AF34DC4BB0828 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit.modulemap",
+				"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SnapKit/SnapKit-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C6BF0E13E56C13A16716EA525CA28F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A3BACB09D5C511011339E8C96BCFBCF /* ChatCollectionViewFlowLayout.swift in Sources */,
+				0A5E4E9FCC79EFE0A63CAC43BC518A00 /* ChatHelper.swift in Sources */,
+				7101D8252FA1434A5E8410FB177D15C1 /* ChatToolBar.swift in Sources */,
+				D70AC73F4E2779BAC3FECF05AF15BC99 /* EmojiItem.swift in Sources */,
+				5A239C875AFE0AD2D5C166D72B2BB2F0 /* EmojiView.swift in Sources */,
+				6A6B1DD1C02A750910691A7A0A1EC46E /* ItemsItem.swift in Sources */,
+				C7F26321313FEAC31759CE8B5C1340E1 /* ItemsView.swift in Sources */,
+				229F47382BBED568970EA05ACF4520F9 /* kk_chat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6578524D383C10F5A3490078482F943C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E53A9D3CCE93406BFCB9A4C299F992A1 /* Pods-chatDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE35D815C959C6B87049E62F61B6859A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5EDAACDF740CEF02E9BBDA0E75EE884 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98F2E3AA8F9B4F49AA954860D1D99E74 /* Constraint.swift in Sources */,
+				BB126289B358A0D582E5248434643BFB /* ConstraintAttributes.swift in Sources */,
+				9FCA2F68AB9B605999AFCD9D9E91A544 /* ConstraintConfig.swift in Sources */,
+				C54D24F09B889DE9D7122DE5C234203E /* ConstraintConstantTarget.swift in Sources */,
+				FE78DFF2145384C58BA7351CC97E045D /* ConstraintDescription.swift in Sources */,
+				C82BE2ECAD6D36548590AE9614D0968E /* ConstraintDSL.swift in Sources */,
+				FFE05ABF4B91D72FAC98723017B333F2 /* ConstraintInsets.swift in Sources */,
+				4DAD5E065E73D957EADC0A190C14B874 /* ConstraintInsetTarget.swift in Sources */,
+				8F4493859BE07A49AD22D58BA40747E8 /* ConstraintItem.swift in Sources */,
+				FE8E8FDD0CAF824655A72A5F7A37EFE6 /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				E2CCDF9AF5A8C57BB9F27E52A6DC53DF /* ConstraintLayoutGuide.swift in Sources */,
+				9206427F7845DE82E68276DC2CFF7A3A /* ConstraintLayoutGuideDSL.swift in Sources */,
+				E4AA887E3619B2D3063DEE7598FAE483 /* ConstraintLayoutSupport.swift in Sources */,
+				9A6F98C3156E0419F1E4FDE7996B8DF9 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				3574080CBFD4282710B938E78C1FB8F8 /* ConstraintMaker.swift in Sources */,
+				B11E353B77E086BF4D3C41529319BF28 /* ConstraintMakerEditable.swift in Sources */,
+				8C9BFB98C2D79AE959E32B524C5C1CDF /* ConstraintMakerExtendable.swift in Sources */,
+				0096ADCE9A975A5890279DA23B341F33 /* ConstraintMakerFinalizable.swift in Sources */,
+				9FC85FD169BBCC5544F7EAB2E01586B7 /* ConstraintMakerPriortizable.swift in Sources */,
+				05C110DA0C1A38266DDFEAC9318BB30B /* ConstraintMakerRelatable.swift in Sources */,
+				29723BB3856B9A924C6EAA3D891BC61D /* ConstraintMultiplierTarget.swift in Sources */,
+				DC3FF1EC412E47ED9CAD33610B28641E /* ConstraintOffsetTarget.swift in Sources */,
+				9E1002EBA51FE83BF1EB08EB8A91022E /* ConstraintPriority.swift in Sources */,
+				7EA5D19366C319D4CC920129E870F07E /* ConstraintPriorityTarget.swift in Sources */,
+				FA2D93D94F42BFF4FF706FF56DAB218F /* ConstraintRelatableTarget.swift in Sources */,
+				98D3F87AAB63F91A4DEFC8618E1F80A3 /* ConstraintRelation.swift in Sources */,
+				A666395A2FAB36E49B51F0CCAFD41ED0 /* ConstraintView+Extensions.swift in Sources */,
+				CB4C07D6C37565C907988F99DB7A832F /* ConstraintView.swift in Sources */,
+				93474454AB2521BDA2E2F4221508BBA7 /* ConstraintViewDSL.swift in Sources */,
+				88C474DDEC0AEF01220DCDCA96281D3E /* Debugging.swift in Sources */,
+				1DBA3EA029305BC11FFEEFA6AD95F2A3 /* LayoutConstraint.swift in Sources */,
+				F9AFEC3208B46DDC8AA73E685B8BF440 /* LayoutConstraintItem.swift in Sources */,
+				34DFDAC029A3BCD857AFB6B7D9BC6CE0 /* SnapKit-dummy.m in Sources */,
+				68C27739926EBB1A39384046119A3036 /* Typealiases.swift in Sources */,
+				DDA3D7B078291A21C26B8CC18B0D8573 /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		313FF4128CB28C1AE404E5EA29F4C02C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = kk_chat;
+			target = 6AE34DE25512E5E6CA3C761B8E8BFAEC /* kk_chat */;
+			targetProxy = D5B83962563B913CEAE8BED1111513B8 /* PBXContainerItemProxy */;
+		};
+		81EB8483656B24DF59D544AB2D95006E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 6A1B2AA6AC935920840A471FB997DE41 /* SnapKit */;
+			targetProxy = 6E8422F3131E63B98580E27D1480518F /* PBXContainerItemProxy */;
+		};
+		CD2F5B62CF4E988633A8C4C3039AEF3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "kk_chat-resources";
+			target = 0B993D0DADBC3E7CBBEC0BC8700531A8 /* kk_chat-resources */;
+			targetProxy = 1226BA5F7E27D8AA1A6A74C24D9F0931 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F8283816D355CF768C64F1EA1D674E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/kk_chat/kk_chat-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/kk_chat/kk_chat.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = kk_chat;
+				PRODUCT_NAME = kk_chat;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		60DAF49CA7A9F362148D49C3C3123B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		83989D5963503618B7108D1D6A92DDE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kk_chat";
+				INFOPLIST_FILE = "Target Support Files/kk_chat/ResourceBundle-resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B4C2821A5E4D838DFC3A1F6D16512CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13CFA05C2C4A6BAC4C33001EB0954C2 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SnapKit/SnapKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B74C4F48D7D30CAC2643C12B68951F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/kk_chat";
+				INFOPLIST_FILE = "Target Support Files/kk_chat/ResourceBundle-resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B97B650EA4385088DF9F605649B98ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC621EBECFBA3CD2A6607A157DE329A /* Pods-chatDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-chatDemo/Pods-chatDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4EAA84F44D044E108500A81C635F21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C6C05A94B823751C49D228E58B9EF063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9510E373BE2D00739310BC1FDB72F5D9 /* Pods-chatDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-chatDemo/Pods-chatDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEC5B0190A27EE37FD20346184104AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13CFA05C2C4A6BAC4C33001EB0954C2 /* SnapKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SnapKit/SnapKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E024E3F82D3D50D596B49FB87AFA910D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99353CBB8CE6F311DDCDCF2938949C49 /* kk_chat.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/kk_chat/kk_chat-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/kk_chat/kk_chat.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = kk_chat;
+				PRODUCT_NAME = kk_chat;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EFB40A8C6CB44E914492314855F457A /* Build configuration list for PBXNativeTarget "kk_chat-resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83989D5963503618B7108D1D6A92DDE6 /* Debug */,
+				B74C4F48D7D30CAC2643C12B68951F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60DAF49CA7A9F362148D49C3C3123B2A /* Debug */,
+				C4EAA84F44D044E108500A81C635F21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664EB621CD4B1B44E142957351FCD1DD /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEC5B0190A27EE37FD20346184104AE8 /* Debug */,
+				B4C2821A5E4D838DFC3A1F6D16512CE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEF99481B7762026649DC2D712F6016A /* Build configuration list for PBXNativeTarget "Pods-chatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B97B650EA4385088DF9F605649B98ECE /* Debug */,
+				C6C05A94B823751C49D228E58B9EF063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C52A4D08426A941D4DE973C58E7154E4 /* Build configuration list for PBXNativeTarget "kk_chat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8283816D355CF768C64F1EA1D674E6 /* Debug */,
+				E024E3F82D3D50D596B49FB87AFA910D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
